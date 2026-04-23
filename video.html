@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            background-image: radial-gradient(#000000 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+       header {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('deer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+          nav {
+            position: absolute;
+            bottom: 0; 
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            background: #f2f2f2; 
+            width: fit-content;
+            padding: 8px 25px;
+            border-radius: 100px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: all 0.2s ease-out; 
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(-4px); 
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        nav a.active {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(0); 
+            }
+        
+       .container {
+            width: 90%;
+            max-width: 1500px;
+            margin: 60px auto 20px auto; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 50px;
+            border: 3px solid #333;
+            background-image: radial-gradient(#f0f0f0 1.5px, transparent 1.5px);
+            background-size: 20px 20px; 
+            box-shadow: 5px 5px 0px rgba(169, 139, 118, 0.2);
+            overflow: hidden;
+            }
+
+        .content-text h2 {
+            color: #A98B76;
+        }
+
+        .content-text p {
+            text-align: justify;
+        }
+
+        /* VIDEO */
+        .video-box {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #A98B76;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .video-box iframe {
+                height: 250px;
+            }
+        }
+    /* RESPONSIVE (HP) */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+}
+        header {
+    background-color: #A98B76; 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Font aesthetic */
+    font-style: italic;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern */
+    font-size: 1rem;
+    letter-spacing: 4px; /* Jarak antar huruf biar estetik */
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN HEADER -->
+   <header> <p>Portofolio</p>
+        <h1>Aiyra Qineshia</h1>
+        <p>Karya Nyata dari proses belajar</p>
+        <div class="header-line"></div>
+
+
+    <link href="https://googleapis.com" rel="stylesheet">
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html" >Profil</a>
+    <a href="video.html" class="active">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+  </header>
+    </body>
+
+<div class="container">
+
+    <div class="content-text">
+
+        <h2>Video Argumentasi</h2>
+        <p>
+            <i>
+            Isi video yang saya buat menjelaskan bahwa Internship Curriculum (IC) penting untuk memberikan pengalaman kerja langsung kepada siswa. Dan juga menjelaskan bahwa, program IC memiliki banyak manfaat, tetapi tidak semua siswa bisa merasakannya secara maksimal jika bidang yang tidak sesuai dengan minat dan bakat.
+            </i>
+        </p>
+
+        <h2>Topik yang Diangkat</h2>
+        <p>
+            <i>
+            Peran Internship Curriculum di Nisvara Bakery dalam Mengembangkan Keterampilan Siswa.
+            </i>
+        </p>
+
+        <h2>Alasan Memilih Topik</h2>
+        <p>
+            <i>
+           Alasan saya memilih topik "Peran Internship Curriculum di Nisvara Bakery dalam Mengembangkan Keterampilan Siswa." adalah karena saya mengalami secara langsung pelaksanaan program IC di Nisvara Bakery. Dari pengalaman tersebut, saya merasakan bagaimana peran program IC dalam mengembangkan keterampilan saya dalam beberapa aspek, terutama dalam hal beradaptasi dengan lingkungan baru. Selain itu, saya juga mendapatkan banyak pengalaman baru di Nisvara Bakery yang membantu saya dalam menyusun dan menuliskan argumen berdasarkan kejadian yang saya alami, sehingga topik ini terasa lebih sesuai dengan pengalaman saya.
+            </i>
+        </p>
+
+        <h2>Pesan dan Harapan</h2>
+        <p>
+            <i>
+             Saya berharap semoga penonton ke depannya dapat lebih bijak lagi dalam memilih bidang Internship Curriculum. Tidak hanya Internship Curriculum, tetapi juga penonton harus lebih berhati-hati untuk memilih langkah selanjutnya. Pilihlah bidang yang sesuai dengan minat dan bakat, agar penonton dapat mengerjakan tugas atau pekerjaan dengan sepenuh hati.</i>
+        </p>
+
+    </div>
+
+    <!-- EMBED VIDEO -->
+    <div class="video-box">
+        <h2>Video Karya Saya</h2>
+       
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/g9XPcV-rHGk?si=UAhEFa6kuBdqdszw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<body>
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aiyra Qineshia Putri Ryu@2026</p>
+</footer>
+
+</body>
+</html>

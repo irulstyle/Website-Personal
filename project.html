@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | My Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            background-image: radial-gradient(#000000 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('deer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+          nav {
+            position: absolute;
+            bottom: 0; 
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            background: #f2f2f2; 
+            width: fit-content;
+            padding: 8px 25px;
+            border-radius: 100px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: all 0.2s ease-out; 
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(-4px); 
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        nav a.active {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(0); 
+        }
+
+       .container {
+            width: 90%;
+            max-width: 1500px;
+            margin: 60px auto 20px auto; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 50px;
+            border: 3px solid #333;
+            background-image: radial-gradient(#f0f0f0 1.5px, transparent 1.5px);
+            background-size: 20px 20px; 
+            box-shadow: 5px 5px 0px rgba(169, 139, 118, 0.2);
+            overflow: hidden;
+            }
+
+        .container h2 {
+            color: #A98B76;
+            text-align: center;
+        }
+
+        .container p {
+            text-align: center;
+        }
+
+        /* GRID PROJECT (ALA GAME) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: #f5f5f5;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .project-card a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #16a085;
+            background-color: #ffffff;
+        }
+
+        .project-card a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        footer {
+            background-color: #A98B76;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    /* RESPONSIVE (HP) */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        header {
+    background-color: #A98B76; 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+        }
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Font aesthetic */
+    font-style: italic;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern */
+    font-size: 1rem;
+    letter-spacing: 4px; /* Jarak antar huruf biar estetik */
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN HEADER -->
+    <header> <p>Portofolio</p>
+        <h1>Aiyra Qineshia</h1>
+        <p>Karya Nyata dari proses belajar</p>
+        <div class="header-line"></div>
+
+
+    <link href="https://googleapis.com" rel="stylesheet">
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html" >Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html" class="active">My Project</a>
+</nav>
+  </header>
+    </body>
+
+<div class="container">
+
+    <h2>My Project</h2>
+    <p>
+        <i>
+        Halaman ini menampilkan kumpulan proyek yang pernah saya buat.
+        Klik judul proyek untuk melihat hasil karya saya.
+        </i>
+    </p>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <img src="stripe.jpg" alt="Project 1">
+            <a href="https://youtu.be/g9XPcV-rHGk?si=zpGfSy4vP9rzpCU3" target="_blank">
+                Video Argumentasi
+            </a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="polkadots.jpg" alt="Project 2">
+            <a href="https://link-proyek-2.com" target="_blank">
+                Website Portofolio
+            </a>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <img src="hirono.jpg" alt="Project 3">
+            <a href="https://scratch.mit.edu/projects/1162390610" target="_blank">
+                Game Edukasi
+            </a>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+            <img src="stripe.jpg" alt="Project 4">
+            <a href="https://youtu.be/1b94dDugcVU?si=oD5yX3VF-hSOfnKU" target="_blank">
+                Proyek Lainnya
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aiyra Qineshia Putri Ryu@2026</p>
+</footer>
+
+</body>
+</html>

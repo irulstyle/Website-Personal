@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            background-image: radial-gradient(#000000 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+       header {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('deer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+          nav {
+            position: absolute;
+            bottom: 0; 
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            background: #f2f2f2; 
+            width: fit-content;
+            padding: 8px 25px;
+            border-radius: 100px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: all 0.2s ease-out; 
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(-4px); 
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        nav a.active {
+            background-color: white;
+            color: #A98B76;
+            border-radius: 15px; 
+            transform: translateY(0); 
+        }
+
+        .music-grid {
+            display: flex;       
+            flex-wrap: wrap;     
+            gap: 20px;           
+            margin-top: 15px;
+}
+        
+       .music-mini-box {
+           width: 100%;
+           max-width: 350px;
+           height: 115px;     
+           overflow: hidden; 
+           border-radius: 12px;
+           border: 1px solid #ddd;
+           margin-top: 15px;
+       }
+        
+        .music-mini-box iframe {
+            margin-top: -5px; 
+            }
+
+                .about-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+
+        /* GRID GAMBAR KANAN */
+        .content-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 250px 250px;
+            gap: 10px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1500px;
+            margin: 60px auto 20px auto; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 50px;
+            border: 3px solid #333;
+            background-image: radial-gradient(#f0f0f0 1.5px, transparent 1.5px);
+            background-size: 20px 20px; 
+            box-shadow: 5px 5px 0px rgba(169, 139, 118, 0.2);
+            overflow: hidden;
+            }
+            
+
+        /* FOTO PROFIL */
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #BFA28C;
+        }
+
+        .content-text h2 {
+            color: #A98B76;
+        }
+
+        .content-text p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #A98B76;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    /* RESPONSIVE (HP) */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+}
+        header {
+    background-color: #A98B76; 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+        
+header h1 {
+    font-family: 'Playfair Display', serif; /* Font aesthetic */
+    font-style: italic;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern */
+    font-size: 1rem;
+    letter-spacing: 4px; /* Jarak antar huruf biar estetik */
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN HEADER -->
+    <header>
+        <p>Portofolio</p>
+        <h1>Aiyra Qineshia</h1>
+        <p>Karya Nyata dari proses belajar</p>
+        <div class="header-line"></div>
+
+    <link href="https://googleapis.com" rel="stylesheet">
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html" class="active">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+          </header>
+</body> 
+    
+<div class="container">
+
+    <!-- FOTO DI PALING ATAS -->
+    <style>
+.foto-glow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.foto-glow:hover {
+  box-shadow: 0 0 25px rgba(169, 139, 118, 0.6);
+  transform: translateY(-6px) scale(1.05);
+}
+     </style>
+    <div class="profile-photo">
+        <img src="aku.jpg" class="foto-glow" alt="Foto Profil">
+        <p><i>Aiyra</i></p>
+    </div>
+
+    <!-- ISI PROFIL -->
+    <div class="content-text">
+
+        <h2>Profil Singkat</h2>
+        <p>
+            <i>Aiyra Qineshia Putri Ryu 9 An Nasr, Al Haraki</i>
+        </p>
+            
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        <i>
+                        Saya Aiyra, saya sangat suka menonton film, terutama genre thriller, atau film kartun. Saya suka menonton film genre thriller karena saya suka menebak-nebak dan terkadang film genre thriller itu endingnya unexpected dan plot twist. Saya juga suka mendengarkan musik, genre music yang paling sering saya dengerin itu RnB dan Pop. Baru-baru ini saya sangat sering mendengarkan lagu LNGSHOT, mostly lagu mereka itu genre RnB dan HipHop.
+                        </i>
+                    </p>
+
+    <div class="music-grid">
+        <div class="music-mini-box">
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:350px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/id/song/never-let-go/1866762529"></iframe>
+            </div>
+        <div class="music-mini-box">
+            
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/id/song/the-most-beautiful-thing/1500454356"></iframe>
+            </div>
+        </div>
+            
+        <h2>Minat dan Bakat</h2>
+        <p>
+            <i>
+               Minat saya dalam bermain piano cukup tinggi, dan saya sedang menekuni kegiatan ini. Hobi saya mendengarkan musik, dan terkadang membaca di waktu yang luang. Saya punya daya ingat yang cukup kuat, dan memiliki gaya belajar audio-visual, jadi terkadang saya mudah menghafal jika berkali-kali mendengarkan sesuatu. </i>
+        </p>
+
+        <h2>Cita-cita dan Harapan</h2>
+        <p>
+            <i>Cita-cita saya menjadi dokter, atau orang yang sukses dalam segala hal. Saya berharap ke depannya saya bisa menjadi pribadi yang lebih baik lagi, lebih disiplin, dan berkembang. Saya juga berharap semoga sikap saya ke depannya bisa lebih berani lagi, dan mudah beradaptasi. Saya berharap semoga ke depannya saya bisa mencapai goals nilai dan mendapatkan sekolah serta kampus impian.
+            </i>
+        </p>
+
+        <h2>Kesan dan Pesan Selama Kelas IX</h2>
+        <p>
+            <i>
+            Selama kelas 9, saya sangat senang karena bisa berteman dengan semua teman-teman yang baik hati. Walaupun kelas 9 tugasnya banyak dan ujian terus, tapi saya jadi termotivasi karna mempunyai teman-teman yang baik dan pintar. Saya berharap semoga angkatan ini tetap kompak, dan menjaga tali silaturahmi. Saya juga berharap semoga teman-temanku semua di angkatan ini menjadi orang sukses aamiin
+            </i>
+        </p>
+
+    </div>
+
+</div>
+
+<body>
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aiyra Qineshia Putri Ryu@2026</p>
+</footer>
+
+</body>
+</html>
